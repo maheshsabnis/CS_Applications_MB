@@ -1,3 +1,155 @@
 # C# Applications
 
 - .NET Framework
+	- Basic Building Blocks
+		- Comman Language Specifications (CLS)
+			- Set of Rules for .NET Languages 
+			- e.g.
+				- Syntaxes
+				- Expressions MUST be LHS =  RHS
+					- Consider Using TypeCasting for Data
+				- If a class and its method is used in Source-Code, then the code  file MUST use the namespace in which that class is Present
+			- The Language Specific Compilaters
+				- C# Compiler
+				- VB.NET Compiler
+				- F#
+		- Common Type System (CTS)
+			- Used o Define all Types (aka Data Types) those are used to Store Data
+			- Used by CLS
+			- The 'Type' is the Higest Level Type-Declaration, under the 'System' Namespace
+				- System.Type
+					- This will be used to detech which type of data can be stored in a variable
+				- The System.Object, is a highest-level data types
+# Data Types
+- Numeric
+	- int, unint (4 bytes), System.Int32, System.UInt32 (CTS Types)
+	- short, ushort (2 bytes), System.Int16, System.UInt16 (CTS Types)
+	- byte, (1 byte), System.Byte (CTS Types)
+	- long, ulong (8 bytes), System.Int64, System.UInt64 (CTS Types)
+	- float (4 bytes),  System.Float32 (CTS Types)
+	- double (8 bytes), System.Float64 (CTS Types)
+	- decimal, (16 bytes), System.decimal  (CTS Types)
+- Text
+	- char, 2 bytes, System.Char
+	- string, length of the string * 2 , System.String
+- Boolean
+	- bool
+- Date
+	- date, System.DateTime
+- Collection
+	- Types of In-Memory Data Collection
+			
+		- Framework Class Library (FCL)
+			- Contains Standard Libraries with predefined set of classses grouped under 'Namespaces'
+			- We use these classes while developing application by writing the code
+			- The 'System' the highest level namespace
+				- System.dll
+			- System.Data, For Database
+			- System.Collections, For In-Memory Data Mgmt
+			- System.Web, for Web Apps
+			- System.IO for Files
+			- ..... an so on
+- Input and Output Types (aka Classes)
+	- System.Console
+		- Class for Input/Output for Console Apps
+		- Methods
+			- Output
+				- Write(), Print a string 
+				- WriteLine(), print string on new line
+			- Input
+				- Read(), Read a Current String
+				- ReadLine(), Read a  Line
+				- ReadKey(), read any key
+# Casting of Types
+	- This is required in following cases
+		- The RHS is generating a result which is not in the range of the LHS type 
+			- If RHS returns decimal/long/string, then it cannot be stored into the integer
+		- The RHS retuen value which does not match with the LHS type
+			- if RHS return string and LHS is int/long/ etc. then better cast it
+	- Casting Class
+		- The 'Convert' class
+		- Methods
+			- ToInt32(), ToDecimal(), ToFloat(), ToDouble(), etc
+# Code Compilation
+- C# Source Code ----> Language Specific Compiler (C# Compiler)----> Generate A Compiled Output
+	- Outpt Types from the Cource Code
+		- .exe
+		- .dll
+# Debugging
+	- F9, to apply breakpoint on the code so that the debugging can start
+	- F11, the step into, to debug each line including a method call i.e. all lines for the method
+	- F10, the strp over,  to debug each line by excluding method lines
+# Asssembly
+	- Compiled Output from the .NET Application
+	- The Group of classes in the Program
+	- The Output which is used for distribution to other application (.dll) or the self executable application itself (.exe)
+		- The portable executable file (.PE), means can be shared across diveds on one machine and on other machines and will be executed if the targtt machine contains .NET Framework 
+	- The Intermidiate Language Dis-Assembler
+		- Installed when the .NET Frwk is installed
+		- C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\ildasm.exe
+# C# Programming
+- Fundamentals
+	- Code Statements
+	- Methods
+		- Block of Re-Usable Statements		
+			- One-Way Methods
+				- Does not return anything
+				- May Accepts Input Parameters
+			- Two-Way Methods
+				- Method that retuns a value or a parameter
+				- May Accepts Input Parameters 
+	- Conditional Statements
+	- Type Manipulations
+		- String Data Type
+			- High-Level Language Agonostic Data Type
+			- Powerfull because, it can store large stream of characters in it
+			- The 'string' as declaration of the Type 'System.String'
+			- This is a Reference Type
+			- This is an Array of Characters
+				- Alphabet
+				- Numeric Characters
+				- Special Chaarcters
+			- Since this is an Array, we can use the Loops aka Iteration to read data from String
+				- for..loop
+				- while..loop
+				- do..while
+				- Very Important
+					- for..each loop
+			- Being a Reference type is has following
+				- Property
+					- length
+				- Methods
+					- ToUpper()
+					- ToLower()
+					- SubStr()
+	- Collection Foundation
+		- Arrays
+			- System.Array is a Type (aka class)
+			- Any array declaration of any datatype will be a default instance of array class
+			- The 'Length' is a property
+			- Sort(), IndexOf(), LastIndexOf(), ect.
+	- Collection Framework
+		- In-Memory Data Store Classes
+		- Practices to be followed while using the Collections 		
+	- Object Oriented Programming
+		- Applied OOPs
+		- Classes
+		- Access Specifier, Access Modifiers
+		- Inheritence
+		- Polymorphism
+		- Interfaces
+	- Generics
+		- Best Use of Collections
+	- Event Driven Programming
+		- Delegates
+		- Events
+	- Applied C#
+		- Lambdas
+		- Extension Methods
+		- Anonymous Types
+		- Languag eIntegrated Queries (LINQ)
+	- Threading
+		- Multi-Threading
+		- Parallel Programming
+
+	
