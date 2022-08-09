@@ -23,3 +23,25 @@ Perform following Operations on the string by creating seperate methods for each
 	- Print all string having odd length
 	- Print All string having a character passed to the method in it
 		- PrintContains(char c){.....}
+
+# Date: 09-Aug-2022
+1. From the CS_SimpleClass Project Modify the the StaffLogicList class by add follwing methods
+	- Validate(Staff): This must be a Private method. This method will validate the Staff based on Following Rules
+		- StaffId: MUST not be repeated
+		- StaffName, Address, DeptName, StaffCategory, Ward,Room Must Not be Empty
+		- The StaffCategoty value Must be one of the folowing
+			- Doctor, Nurse, WardBoy, Technicain, Driver
+		- The Ward value must be one of the following
+			- General, Cancer, Heart, Critical Care
+		- Numeric Values MUST not be -ve or 0
+		- This method will be called while regitering new staff and updatring the staff. If the Validte() method return false, then the staff cannot be added or updated
+	- Update Staff based on StaffId, Make sure that StaffId cannot be updated
+		- First Search Record for Staff based on StaffId and if found then only update it
+		- The List MUST maintain an index of Staff aftre update 
+			- means: If the Staff recors is at 5th index before update then post update, it must be at 5th index only
+	- Delete Staff based on StaffId must dele if the StaffId is present else shoe messsage that StaffId is not found
+	- Add Following Mtehods
+		- List Staff by StaffCategory
+		- List Staff By DeptName
+		- List Staff in Acsending order by StaffName
+	- Add a Method to Calculate income for Each Staff bassed on Taxes, Feees, etc. (Modify the Staff class with additional income proeprties as per your analysys)

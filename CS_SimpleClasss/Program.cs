@@ -1,6 +1,8 @@
 ﻿using CS_SimpleClass.Models;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+
 namespace CS_SimpleClass
 {
     public static class Program

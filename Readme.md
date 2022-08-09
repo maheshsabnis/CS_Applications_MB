@@ -155,6 +155,9 @@
 					- The property can immedialy validate the private member in its 'set' method section
 						- The 'set' will be called when a value is assigned to a property
 						- The 'get' will be called when the value is read from the Property
+					- C# 3.0, Auto-Implmented Properties
+						- They are used while creating Entity-Class OR DTO
+						- The C# Compiler creates Private members implicitly for  Auto-Implemented Properties 
 			- Methods
 				- Behaviors aka Logic defined Around Members
 		- Access Specifier
