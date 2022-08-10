@@ -223,6 +223,28 @@
 				- If the base class which is having 'abstract' methods then the derive class MUST override all abstract methods from the base class otherwise the derive class will have error, to eliminate these errors the deriver class either modifed as 'abstract class' or teh derive class MUST override all abstract methods of the base class 
 				- The Base Class Object Can be replaced by the derive class object but vice-versa is not suppored 
 
+				- Method Overloading, Not a Polymorphism
+					- Having Same Methods in Base and Derive class with
+						- Same Name
+							- M1();
+							- M1(int x); Overloading
+						- Different in Parameter Number
+							- M1(int x,int y);
+							- M1(int x,int y, iny z);
+						- Same in Parameter Numbers but different in Types of parameter
+							- M1(int x, string s);
+							- M1(int x, int y);
+						- Same in Parameter number but differnt Type and Different Order of parameters
+							- M1(int x, string s);
+							- M1(string s, int x);
+				- The use of Constctors Across Base amd Derived Classes
+					- The derive class ctor invoke the base class ctor using 'base()' and pass patrameters to base class ctor if the base class has Parameterized ctor
+				- What if the Base and Derive classes wants  Same methods with Same Signeture, but no Overaloding?
+					- Either make the base class as 'virtual' or 'abstract' (Only for Abstratc base class) and let the derive class override it
+					- OR Let the Derive class shodow the base class method using 'new' keyword, known as 'shadowing'
+						- The derive class instance ignore the base class method completly
+						- Real Word: Needed if the base class is not available for modification (means the code is not present with you)
+
 		- Polymorphism
 		- Interfaces
 	- Generics

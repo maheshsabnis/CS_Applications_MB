@@ -40,6 +40,6 @@ namespace CS_Inheritence.Models
         public string WardName { get; set; } = string.Empty;
         public string RoomNo { get; set; } = string.Empty;
         public string Expertise { get; set; } = string.Empty;
-        public int MinPatientsPerDay { get; set; }
+        public int NoOfPatientsPerWard { get; set; }
     }
 }

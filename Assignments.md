@@ -45,3 +45,17 @@ Perform following Operations on the string by creating seperate methods for each
 		- List Staff By DeptName
 		- List Staff in Acsending order by StaffName
 	- Add a Method to Calculate income for Each Staff bassed on Taxes, Feees, etc. (Modify the Staff class with additional income proeprties as per your analysys)
+
+# 10-Aug-2022
+
+1. Modify the DoctorLogic and NurseLogic class for Performing CRUD Operations
+2. Very the following (Today)
+	- Can we have protected and private abstract methods in abstract class
+	- Can we override private or protected abstract methods of abstrat class using public method ode deribed class
+	- Can we have private constructor, if yes then what is the use of it
+	- Varify with self-Study
+		- What is sealed class?
+			- Can we have abstract method in sealed class?
+			- Can we have protected method in sealed class?
+		- Can we have 'static' constructor in abstract as well as sealed class?
+	

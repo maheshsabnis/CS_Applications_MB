@@ -57,6 +57,16 @@ namespace CS_Inheritence.Models
         {
             throw new NotImplementedException();
         }
+
+
+        public override decimal CalcluateIncome(Staff staff)
+        {
+            decimal perDayIncome = ((Doctor)staff).MaxPatientsPerDay * ((Doctor)staff).Fees;
+            decimal monthlyFees = perDayIncome * 30;
+            // Get the basic Salary  
+            decimal grossIncome = base.CalcluateIncome(staff) + monthlyFees;
+            return grossIncome;
+        }
     }
 
 
@@ -81,6 +91,14 @@ namespace CS_Inheritence.Models
         public override List<Staff> Get()
         {
             throw new NotImplementedException();
+        }
+
+        public override decimal CalcluateIncome(Staff staff)
+        {
+            decimal collectionPerDay = ((Nurse)staff).NoOfPatientsPerWard * 400;
+            decimal monthlyCollection = collectionPerDay * 30;
+            decimal grossCololection = base.CalcluateIncome(staff) + monthlyCollection;
+            return grossCololection;
         }
     }
 }
