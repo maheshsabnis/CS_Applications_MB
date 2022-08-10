@@ -193,6 +193,36 @@
 				- If the class is used for defining behavior  (aka logic) then make its containing public/private/protected/internal/protected internal/static member methods
 				    
 		- Inheritence
+			- A Mechanism of Deriving a Specific Class Type from the General Class Type
+			- The Derived Type has access to all Protected and Public Memebrs of the Base Type
+			- Specific to .NET Programming Languages	
+				- 'Only One-Base class is possible to Derive class'
+			- Derivation Types aka Types of Inheritence
+				- Single Inheritence
+					- One base class has onbe Derive class
+						- class Base {}
+						- class Derive: Base{}
+				- Heirarchical Inheritence
+					- Multiple Classes are derived from One Base class
+					- class Base {}
+					- class Derive1:Base{}
+					- class Derive2:Base {}
+				- Multi-Level Inheritence
+					- The derive class act as a Base class for other derived class 
+					- class Base{}
+					- class Derive1:Base {}
+					- class Derive2:Derive1{}
+			- Advantages
+				- Reduce even in some cases eliminate repetation
+				- Completly Avoid Redundancies
+				- In a Specific Derived class, the derive class can be decorated with the additional Members (Properties and Methods) 
+			- Observations while working with Inheritence
+				- If the Derive class want to extend the base class methods (Implementation), then make the base class as an 'abstract' and follow below rules for Writing Methods in base class
+					- If the Derive class intends to write complete new implementation for the method in base class, then the base class method MUST be 'abstract' and the derve class will 'override' it.
+					- If the Derive class want to use the base class method implementation as-it-is or want to enhance the implementation of the base class method then make the base class method as 'virtual' and let the derive class decide wheather to override that method with new implementation or use it as-it-is 
+				- If the base class which is having 'abstract' methods then the derive class MUST override all abstract methods from the base class otherwise the derive class will have error, to eliminate these errors the deriver class either modifed as 'abstract class' or teh derive class MUST override all abstract methods of the base class 
+				- The Base Class Object Can be replaced by the derive class object but vice-versa is not suppored 
+
 		- Polymorphism
 		- Interfaces
 	- Generics
