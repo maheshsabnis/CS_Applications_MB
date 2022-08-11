@@ -246,7 +246,18 @@
 						- Real Word: Needed if the base class is not available for modification (means the code is not present with you)
 
 		- Polymorphism
-		- Interfaces
+		- Communication Across Object 
+			- Interfaces
+				- Share common method standards across classes
+				- A Class can implement one-or-more interfaces
+				- When a class implement interface, then the class MUSt implement all methods from interface
+				- A Class can implement methods from interfaces as Implicit or Explicit
+					- In implicit implementation, the class has ownership of all methods and these are invoked using an instance of the class
+					- In explict implementation, the class contains definition for all methods but these are owne by the interface and hence these methods are invoked using the Interface reference and not using an instance of the class
+				- A Class can derive fropm one-classs and can implement multiple interfaces, BUT THIS IS NOT MULTIPLE INHERITENCE 
+			- Delegate
+			- Event
+	
 	- Generics
 		- Best Use of Collections
 		- They are the Templates for storing Data
