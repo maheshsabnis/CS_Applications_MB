@@ -6,6 +6,7 @@ ITax tax;
 Doctor doc = new Doctor()
 {
     Name = "Dr. Abhay",
+    BasicSalary = 10000,
     Fees = 400,
     MaxPatientsPerDay = 60
 };

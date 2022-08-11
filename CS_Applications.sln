@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{1D37A6D6-5BB4-40ED-87E5-F63F441DC442}"
 	ProjectSection(SolutionItems) = preProject
 		Assignments.md = Assignments.md
+		CS_Appls.pdf = CS_Appls.pdf
+		Generics_Lab.pdf = Generics_Lab.pdf
+		LINQ_HOL.pdf = LINQ_HOL.pdf
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
@@ -42,6 +45,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Dynamic_Polymorphism", "CS_Dynamic_Polymorphism\CS_Dynamic_Polymorphism.csproj", "{B0698C86-8AFF-4E67-AED1-2C75ECC49B27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Interfaces", "CS_Interfaces\CS_Interfaces.csproj", "{9F3B1CF3-6C27-4364-85E5-66EEC8B91AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_MiltipleINterfaces", "CS_MiltipleINterfaces\CS_MiltipleINterfaces.csproj", "{7BA0A4DC-2A02-4448-8947-3BA55F5773E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Delegates", "CS_Delegates\CS_Delegates.csproj", "{20E0D12C-6E62-46D5-A171-C39EB27FAB8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Events", "CS_Events\CS_Events.csproj", "{68EBB8E5-8CAF-4CFB-BFEB-B60D7326DD4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +122,18 @@ Global
 		{9F3B1CF3-6C27-4364-85E5-66EEC8B91AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3B1CF3-6C27-4364-85E5-66EEC8B91AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3B1CF3-6C27-4364-85E5-66EEC8B91AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA0A4DC-2A02-4448-8947-3BA55F5773E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA0A4DC-2A02-4448-8947-3BA55F5773E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA0A4DC-2A02-4448-8947-3BA55F5773E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA0A4DC-2A02-4448-8947-3BA55F5773E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E0D12C-6E62-46D5-A171-C39EB27FAB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E0D12C-6E62-46D5-A171-C39EB27FAB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E0D12C-6E62-46D5-A171-C39EB27FAB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E0D12C-6E62-46D5-A171-C39EB27FAB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EBB8E5-8CAF-4CFB-BFEB-B60D7326DD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EBB8E5-8CAF-4CFB-BFEB-B60D7326DD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EBB8E5-8CAF-4CFB-BFEB-B60D7326DD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EBB8E5-8CAF-4CFB-BFEB-B60D7326DD4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +150,7 @@ Global
 		{9D5E51A2-9E6E-4D4E-AB84-B068300C6E5B} = {AA8F9277-8332-416E-AEA5-06AF0FCF894B}
 		{B0698C86-8AFF-4E67-AED1-2C75ECC49B27} = {AA8F9277-8332-416E-AEA5-06AF0FCF894B}
 		{9F3B1CF3-6C27-4364-85E5-66EEC8B91AD9} = {AA8F9277-8332-416E-AEA5-06AF0FCF894B}
+		{7BA0A4DC-2A02-4448-8947-3BA55F5773E2} = {AA8F9277-8332-416E-AEA5-06AF0FCF894B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {297DD4C8-DC7F-4CE8-B705-E566509679B2}

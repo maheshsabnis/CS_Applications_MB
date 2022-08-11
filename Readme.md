@@ -256,7 +256,40 @@
 					- In explict implementation, the class contains definition for all methods but these are owne by the interface and hence these methods are invoked using the Interface reference and not using an instance of the class
 				- A Class can derive fropm one-classs and can implement multiple interfaces, BUT THIS IS NOT MULTIPLE INHERITENCE 
 			- Delegate
+				- It is a Type that hides an implementation of the method by using the address of the method
+				- The System.Delegate is a Type
+				- By Concept
+					- The delegate is used to invoke the method with its reference
+					- To execute a method with its reference, the signeture of delegate MUST match with the signeture of the method
+					- The delegate MUST be declared at namespace-level so that all classes under that namespace can use the delegate
+				- Additional uses of delegates apart from invoking the method
+					- Used to declare an event
+					- Used to execute a method 'Ansynchronously'
+						- This internally uses 'Thraeding'
+				- A Delegate for Anonymous Method
+					- The delegate directly contains an expression as implmentation
+					- This will be directly Compoled as Binary and executed by the Runtime with Performance benefits
+				- What if the Delegate is passed as Input parameter to a method?
+					- Then pass the 'Lambda Expression' as input parameter to a method
+					- C# 3.0
+						- e.g.
+							- Method(handler)
+								- The handler is delegate declared as follows
+									- delegate double handler(double x, double y);
+							- Pass the Lamdba Expression to Methods as follows
+								- Method((x,y)=> {return x*x + 2*x*y+ y*y});
+								- This Lambda will be converted into Binary as follows
+									- OperanExpression class in CLR 2.0 with SP1
+										- x and y
+									- OperatorExpression Class
+										- * and +
+									- Expression Class
+										- x*x + 2*x*y+ y*y
 			- Event
+				- A Sepcial type of delegate
+				- Always declared inside the class
+				- Use events for Notifications
+				- The delegate which is used to declare an event MUS be having return type as 'void' (One-Way)
 	
 	- Generics
 		- Best Use of Collections

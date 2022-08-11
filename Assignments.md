@@ -59,3 +59,5 @@ Perform following Operations on the string by creating seperate methods for each
 			- Can we have protected method in sealed class?
 		- Can we have 'static' constructor in abstract as well as sealed class?
 	
+# 11-Aug-2022
+1. Modify the 08-Aug-2022 assignment 2 using Lambda Expressions 

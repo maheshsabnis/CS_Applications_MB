@@ -60,7 +60,7 @@ namespace CS_Interfaces.Models
         {
             decimal perDayIncome = ((Doctor)staff).MaxPatientsPerDay * ((Doctor)staff).Fees;
             decimal monthlyFees = perDayIncome * 30;
-            // Get the basic Salary  
+                                 // Get the basic Salary  
             decimal grossIncome = base.CalcluateIncome(staff) + monthlyFees;
             GrossIncome = grossIncome;  
             return grossIncome;
