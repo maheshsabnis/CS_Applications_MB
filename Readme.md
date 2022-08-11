@@ -314,8 +314,31 @@
 	- Applied C#
 		- Lambdas
 		- Extension Methods
+			- These are  methods those are added into the existing type Sealed/abstract/Interface without modifying the source-code of the type
+			- The class that contains the extension method MUST be Static
+			- The methopd MUST be static
+			- The First Parameter of the method MUST be the 'this' referred 'reference' of the 'class' for which this method will  act as extenion method
+				- class MyClass {......}
+				- Extension class will be
+					- static class MyExtension { static void MyExtension(this MyClass m){....}    }
+				- MyClass m = new MyClass();
+				- m.MyExtension();
+
 		- Anonymous Types
 		- Languag eIntegrated Queries (LINQ)
+			- A mechanism of eliminting gap between Database and Object
+			- The Object is now not just a 'schema' but its is 'data' also
+			- A Similar Queries like Database
+			- Extension Methods for declaratibe Queries
+				- Select(), Where(), OrderBy(), OrdebyDescending(), GroupBy(), Jin(), etc.
+				- e.g.
+					- Collection.Where(Consition as Lambda Expression)
+			- Keyword for Imperative queries , similar to Database Queries
+				- Keywords
+					- from, select, hroup, by, order, desc, join, etc.
+			- Scalar Functions
+				- Sum(), Min(), Max(), Take(), Skip(), etc.
+				
 	- Threading
 		- Multi-Threading
 		- Parallel Programming

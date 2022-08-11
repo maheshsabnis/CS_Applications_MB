@@ -61,3 +61,8 @@ Perform following Operations on the string by creating seperate methods for each
 	
 # 11-Aug-2022
 1. Modify the 08-Aug-2022 assignment 2 using Lambda Expressions 
+2. Modify the First Assignment of Date 08-Aug-2022 by adding Extension methods for string
+	- Yiu can use LINQ
+3. From the EmployeeCollection Print Employee with Second Max Salary
+4. From the EmployeeCollection Print Employee with Max and Min Salary Per Department
+
