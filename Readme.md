@@ -389,7 +389,48 @@
 				- All Mathods those ends with 'Async' word are asynchronous methods and they returns Task object
 					- e.g.
 						- ReadAsync(), WriteAsync(), GetAsync(), PostAsync(), etc.
+	- Memeory-Management
+		- For All Managed Resources, the GC is responsible to Clean them from Managed-HEAP
+			- Managed Resources : All the classes those are executed within the boundary of CLR e.g. Collections, Generics, etc.
+				- Block-Scopde declarations
+			- For all UnManaged Resources, to clean them from Managed-Heap, The garbage collection will call the Destructor for that object (First call for GC), this will clean the allocation from the ManagedHeap, but the object reference still present in Finalization Queue (A data structure that contains entries those are waiting to be cleansed) 
+				- The Garbage Collector thread will b einvoked twice to clean finalization Q
 
+# C# Practices
+1. The String Declaration MUST be either 'null' or 'string.Empty'
+2. Use the Auto-Implemented Properties for the entity class
+3. Instead of using Colleciton classes, use the generics
+4. If the class is performing an 'Un-Managed Resource' operations, then to kill the object let the class implement an'IDisposable' interface
+	- Un-Managed Resource: All the resources those provided by OS to .NET Application
+		- e.g. Database Connections, File System, Socker Resources, Messaging resources (e.g. MSMQ, RabbitMQ)
+5. Use Exception Handling
+	- A Methodology to handle errors while CLR failed to process the code
+	- try{.....}catch(Exception ex){.....} finally {........}
+		- The Exception, the highgest level exception handling class
+		- If try fails the catch will be executed
+		- The finally will be executed irrespective of try or catch executed
+		- The 'throw' keyword to throw the exception
+	- Observations
+		- If M1() calls M2(), an M2() throws an exception then instead of catching the exception in M2(), throw it so that M1() can catch it 
+			- Exception Chaining
+	- USe Exception Handling as Mandatory Practice while working with following
+		- Database Operations
+		- File Handling
+		- Http Communication
+		- Messaging
 
-
-	
+C# Modern Language Features
+	- Tuples : Key Value Pair C# 7.0
+	- Records : An Alternative to Entity Classs C# 10.0
+	- Pattern Matching C# 6.0
+	- Discards C# 6.0
+	- Inner Classes
+	- Destructuring
+	- ... many more
+- Important Geneirc Classes for Storing Data
+	- HashSet<T>
+		- Store a Unique Entry
+	- Dictionay<K,V>
+		- USed to Store data in Key Value pair form
+		- K is mostly inte, string
+		- V is value can be any CLR Type

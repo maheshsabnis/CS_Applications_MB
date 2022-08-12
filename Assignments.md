@@ -73,3 +73,6 @@ Perform following Operations on the string by creating seperate methods for each
 	- List all Employees in Ascending Order by Salary, Task 1
 	- Continue to Task 2 to calculate Tax for each Employee
 	- Contunue to Task 3 to Print All Employees with the EmpNo, EmpName, Salary, Tax fashion
+2. Create a Dictionary of Employees by adding a Designation as a property into the Employee Record and hence in th Dictionary (With total records as min 40 including all keys) and perform following operations on Dictionary
+	- Modify the Dictionay data by sorting each employee by EmpName
+	- Show the Employee who is having Max.Salary per Key (DeptName) 
