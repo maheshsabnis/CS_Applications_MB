@@ -266,6 +266,10 @@
 					- Used to declare an event
 					- Used to execute a method 'Ansynchronously'
 						- This internally uses 'Thraeding'
+						- BegingInvoke(), To Start Execution, this returns IAsyncResult interface, this monitor the async execution.
+							- IAsyncResult as 'IsCompleted' property, that indicates if the thread has complete its execution
+						- EndInvoke(IAsyncResult)
+							- Represents that the Thread has done the job and the result is returned
 				- A Delegate for Anonymous Method
 					- The delegate directly contains an expression as implmentation
 					- This will be directly Compoled as Binary and executed by the Runtime with Performance benefits
@@ -341,6 +345,51 @@
 				
 	- Threading
 		- Multi-Threading
+			- A 'Thread' Class
+				- Represent a process that is to be executed either SYnchronously or Asynchronously
+				- Start(), Stop(), Suspend(), Resume(), Abort(), Join(), etc.
 		- Parallel Programming
+			- .NET 4.0 year 2010, The CLR 4.0
+				- CLR Add-On with Parallel Extensions
+					- A Great wrapper over the Hardware Parallel Processing
+					- Parallel
+						- Ask CLR to Alocate and Manage thread internally and execute the Large Processes 
+							- Parallely on Implicitly Picked threads from CLR
+								- For() and ForEach()
+									- USed to Process Large Collections parallely instead of sequential execution
+							- Invoke the multiple Processes and intenlly execute them by Threads
+								- Invoke() Method
+									- Invoke multiple processes and execute them on different thread w/o creating them exolicitly
+					- Task
+						- A Unit of Asynchronous Programming
+						- This manages the Thread internally
+						- Runs Multiple Threads
+						- Wait for Threads to Complete
+							- Wait(): Wait for a Thread  to completes its execution, WaitAll(); Wait for All threads to complete its execution, WaitAny(): Any Specific Thread
+						- Start()
+							- Start a Task Explicitly
+						- Task.Factory.StartNew()
+							- Call a Method that uses Sub-Tasks in it
+							- E.g.
+								- Task.Factory.StartNew(()=>{Method1();});
+								- void Methods1() {Task1.Start(), Task2.Start()......}
+						- Move from-One-Thread-To-Other-Thread After completion of first thread
+							- ContineWith()	
+								- Helps to Jump to the Next Task when the Previous is completed
+						- Challanges while working with Tasks
+							- What should we do if the Method running on task want to return some data?
+								- Ask the FActory to Monitor the execution and then collect datas from it and then return to main thread
+								- Receive the result from the Task using 'Result' property of the Task Object 
+							
+			- .NEt 4.5 + and Contiue in .NET Core, .NET 5, 6
+				- Asynchronous Programming
+				- The 'async' and 'await' modifiers
+					- 'async' applied for the method that performs Task Based Operation
+					- 'await' is applied on startment to infor CLR that the current staement is executed asynchornously and return a Result after the statement is executed
+				- All Mathods those ends with 'Async' word are asynchronous methods and they returns Task object
+					- e.g.
+						- ReadAsync(), WriteAsync(), GetAsync(), PostAsync(), etc.
+
+
 
 	

@@ -26,6 +26,9 @@ namespace MyNamespace
             // 3. Invoke the method by passing parameters to delegate instance
             resPower = handler1.Invoke(5,10);
             Console.WriteLine($"Using Delegate 10 raised to 5 = {resPower}");
+            Console.WriteLine();
+           
+
 
             Console.WriteLine();
             Console.WriteLine("C# 2.0 use of delegate by directly passing an implementation to it.");

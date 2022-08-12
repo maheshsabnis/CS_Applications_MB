@@ -66,3 +66,10 @@ Perform following Operations on the string by creating seperate methods for each
 3. From the EmployeeCollection Print Employee with Second Max Salary
 4. From the EmployeeCollection Print Employee with Max and Min Salary Per Department
 
+
+# Date 12-Aug-2022
+
+1. USe the Employee Collection provided with this solution and perform the following operations on it in 3 Tasks
+	- List all Employees in Ascending Order by Salary, Task 1
+	- Continue to Task 2 to calculate Tax for each Employee
+	- Contunue to Task 3 to Print All Employees with the EmpNo, EmpName, Salary, Tax fashion
